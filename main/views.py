@@ -37,10 +37,16 @@ def show_news(request, id):
     return render(request, "news_detail.html", context)
 
 def show_xml(request):
+    news_list = News.objects.all() 
+
+def show_xml(request):
      news_list = News.objects.all()
      xml_data = serializers.serialize("xml", news_list)
      return HttpResponse(xml_data, content_type="application/xml")
 
+def show_json(request):
+    news_list = News.objects.all()
+    
 def show_json(request):
     news_list = News.objects.all()
     json_data = serializers.serialize("json", news_list)
