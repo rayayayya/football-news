@@ -32,7 +32,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "rayna-balqis-footballnews.pbp.cs.ui.ac.id"]
 CSRF_TRUSTED_ORIGINS = [
-    "https://rayna-balqis-footballnews.pbp.cs.ui.ac.id/"
+    'https://rayna-balqis-footballnews.pbp.cs.ui.ac.id',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
 ]
 
 # Application definition
